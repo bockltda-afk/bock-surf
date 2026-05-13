@@ -24,42 +24,41 @@ export default function Hero() {
       <div className="container relative z-10 mx-auto px-4 md:px-6 max-w-6xl">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent mb-8 backdrop-blur-sm">
-            <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-            🏄 Surfista Profesional Chileno
+          <div className="inline-flex items-center gap-2 border-l-4 border-accent bg-accent/5 px-4 py-2 text-sm font-bold uppercase tracking-widest text-white mb-8">
+            Surfista Profesional
           </div>
 
           {/* Title */}
           <h1
-            className="text-6xl md:text-8xl font-black tracking-tight text-white mb-6 leading-none"
-            style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "2px" }}
+            className="text-7xl md:text-9xl font-bold tracking-tighter text-white mb-6 leading-[0.85] uppercase"
+            style={{ fontFamily: "'Oswald', sans-serif" }}
           >
             TOMÁS<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">
+            <span className="text-accent">
               BOCK
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-200 mb-4 font-light leading-relaxed max-w-2xl">
-            Surf Coach Profesional — Te enseño a leer el océano, dominar las olas y surfear con propósito.
+          <p className="text-xl md:text-2xl text-white mb-4 font-bold uppercase tracking-tighter leading-relaxed max-w-2xl">
+            Técnica · Potencia · Lectura de Océano
           </p>
-          <p className="text-base text-gray-400 mb-10 max-w-xl">
-            📍 Reñaca · Viña del Mar · La Boca · Concón &nbsp;|&nbsp; 🏆 Surfista Profesional &nbsp;|&nbsp; 🌊 +10 años en el agua
+          <p className="text-sm font-mono text-muted uppercase mb-10 max-w-xl">
+            Reñaca · Viña del Mar · La Boca · Concón | Chile
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#servicios"
-              className="px-8 py-4 bg-accent hover:bg-accent-hover text-background rounded-lg font-black text-lg transition-all shadow-xl shadow-accent/20 text-center"
+              className="px-8 py-4 bg-accent hover:bg-accent-hover text-white rounded-none font-bold text-lg uppercase tracking-widest transition-all shadow-xl shadow-accent/20 text-center"
             >
-              🏄 Ver Coaching
+              Ver Coaching
             </a>
             <a
               href="#cursos"
-              className="px-8 py-4 bg-transparent border-2 border-white/30 hover:border-accent hover:text-accent text-white rounded-lg font-bold text-lg transition-all text-center backdrop-blur-sm"
+              className="px-8 py-4 bg-transparent border-2 border-white hover:bg-white hover:text-black text-white rounded-none font-bold text-lg uppercase tracking-widest transition-all text-center"
             >
-              Ver Cursos Online
+              Cursos Online
             </a>
           </div>
         </div>

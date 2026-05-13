@@ -26,12 +26,15 @@ export default function About() {
           {/* Image Column */}
           <div className="w-full lg:w-5/12 relative">
             {/* Stats inline */}
-            <div className="flex gap-4 mb-6 justify-center lg:justify-start">
-              {stats.map((stat, i) => (
-                <div key={i} className="flex-1 glass rounded-xl p-4 text-center">
-                  <div className="flex justify-center mb-1">{stat.icon}</div>
-                  <p className="text-2xl font-black text-white">{stat.value}</p>
-                  <p className="text-xs text-gray-400 uppercase tracking-wide font-medium whitespace-pre-line">{stat.label}</p>
+            <div className="flex gap-4 mb-6">
+              {[
+                { value: "+10", label: "Años" },
+                { value: "+150", label: "Alumnos" },
+                { value: "CHI", label: "Pro" },
+              ].map((stat, i) => (
+                <div key={i} className="flex-1 bg-white/5 border border-white/10 p-4 text-center">
+                  <p className="text-3xl font-bold text-white tracking-tighter">{stat.value}</p>
+                  <p className="text-[10px] text-accent uppercase tracking-[0.2em] font-bold">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -50,7 +53,10 @@ export default function About() {
           {/* Text Column */}
           <div className="w-full lg:w-7/12">
             <p className="text-accent text-sm font-bold uppercase tracking-widest mb-3">Mi historia</p>
-            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            <h2 
+              className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-8 uppercase"
+              style={{ fontFamily: "'Oswald', sans-serif" }}
+            >
               Hola, soy <span className="text-accent">Tomás Bock</span>
             </h2>
             <p className="text-lg text-gray-300 mb-5 leading-relaxed">
@@ -60,20 +66,22 @@ export default function About() {
               Hoy canalizo toda esa experiencia para enseñarte a surfear de verdad — con técnica, seguridad y conexión real con el mar. Mi metodología combina la comprensión del océano, la técnica corporal y la mentalidad de un competidor. Opero en Reñaca, Playa La Boca, Concón y Viña del Mar.
             </p>
 
-            <ul className="space-y-4 mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-10">
               {credentials.map((item, idx) => (
-                <li key={idx} className="flex items-start text-gray-200 gap-3">
-                  <CheckCircle className="text-accent mt-0.5 flex-shrink-0" size={22} />
-                  <span className="text-base">{item}</span>
-                </li>
+                <div key={idx} className="flex items-center gap-3 group">
+                  <div className="w-2 h-[2px] bg-accent" />
+                  <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">
+                    {item}
+                  </span>
+                </div>
               ))}
-            </ul>
+            </div>
 
             <a
               href="#contacto"
-              className="inline-block px-8 py-4 bg-white/10 hover:bg-accent hover:text-background text-white border border-white/20 hover:border-accent rounded-lg font-bold text-lg transition-all"
+              className="inline-block px-10 py-4 bg-transparent hover:bg-white text-white hover:text-black border-2 border-white font-bold text-lg uppercase tracking-widest transition-all"
             >
-              Conoce mi método 🌊
+              Conoce mi método
             </a>
           </div>
 

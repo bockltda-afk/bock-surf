@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;700&family=Space+Mono&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,8 +7,8 @@
 
 @layer base {
   :root {
-    --background: #020617;
-    --foreground: #f8fafc;
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 

@@ -8,7 +8,7 @@ const navItems = [
   { name: "Inicio", href: "#inicio" },
   { name: "Sobre mí", href: "#sobre-mi" },
   { name: "Coaching", href: "#servicios" },
-  { name: "Cursos 🔧", href: "#cursos" },
+  { name: "Cursos", href: "#cursos" },
   { name: "Testimonios", href: "#testimonios" },
   { name: "Precios", href: "#precios" },
   { name: "Contacto", href: "#contacto" },
@@ -47,12 +47,13 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#inicio" className="flex items-center gap-2">
-          <span className="text-2xl font-black tracking-tighter text-white">
-            TOMÁS<span className="text-accent"> BOCK</span>
-          </span>
-          <span className="hidden sm:block text-xs text-gray-400 font-medium border-l border-gray-600 pl-2 uppercase tracking-widest">
-            Surf Coach
+        <a href="#inicio" className="flex items-center gap-3">
+          <div className="bg-white text-black px-2 py-0.5 font-bold text-xl tracking-tighter">TB</div>
+          <span 
+            className="text-2xl font-bold tracking-tighter text-white uppercase"
+            style={{ fontFamily: "'Oswald', sans-serif" }}
+          >
+            Tomás<span className="text-accent">Bock</span>
           </span>
         </a>
 
@@ -63,10 +64,10 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-accent",
+                "text-[11px] font-bold uppercase tracking-[0.2em] transition-colors hover:text-accent",
                 activeSection === item.href.substring(1)
                   ? "text-accent"
-                  : "text-gray-300"
+                  : "text-gray-400"
               )}
             >
               {item.name}
@@ -74,9 +75,9 @@ export default function Navbar() {
           ))}
           <a
             href="#contacto"
-            className="px-5 py-2 bg-accent hover:bg-accent-hover text-background rounded-md font-bold transition-colors text-sm shadow-lg shadow-accent/20"
+            className="px-6 py-2 bg-white hover:bg-accent text-black hover:text-white font-bold uppercase tracking-widest transition-all text-xs"
           >
-            ¡Quiero Surfear!
+            Inscríbete
           </a>
         </nav>
 
@@ -97,7 +98,7 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-base font-medium text-gray-300 hover:text-accent py-2 border-b border-white/5"
+              className="text-sm font-bold uppercase tracking-widest text-gray-300 hover:text-accent py-2 border-b border-white/5"
             >
               {item.name}
             </a>
@@ -105,9 +106,9 @@ export default function Navbar() {
           <a
             href="#contacto"
             onClick={() => setMobileMenuOpen(false)}
-            className="w-full text-center px-5 py-3 bg-accent text-background rounded-md font-bold"
+            className="w-full text-center px-5 py-3 bg-white text-black font-bold uppercase tracking-widest"
           >
-            ¡Quiero Surfear!
+            Inscríbete
           </a>
         </div>
       )}

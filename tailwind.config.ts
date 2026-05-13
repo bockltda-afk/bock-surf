@@ -8,15 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ["Oswald", "sans-serif"],
+        body: ["Inter", "sans-serif"],
+        mono: ["Space Mono", "monospace"],
+      },
       colors: {
         accent: {
-          DEFAULT: "#38bdf8", // Sky Blue elegante
-          hover: "#0ea5e9",
+          DEFAULT: "#E0040B", // Red Bull Style Red
+          hover: "#B90309",
         },
-        background: "#020617",   // Slate 950 (Azul profundo profesional)
-        foreground: "#f8fafc",   // Slate 50
-        card: "#0f172a",         // Slate 900
-        muted: "#64748b",        // Slate 500 para textos secundarios
+        background: "#000000",   // Pure Black for Volcom style
+        foreground: "#FFFFFF",
+        card: "#111111",
+        muted: "#888888",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
