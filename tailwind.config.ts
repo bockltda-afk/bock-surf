@@ -18,6 +18,7 @@ const config: Config = {
           DEFAULT: "#E0040B", // Red Bull Style Red
           hover: "#B90309",
         },
+        secondary: "#4b3621",    // Café tierra/cuero premium
         background: "#000000",   // Pure Black for Volcom style
         foreground: "#FFFFFF",
         card: "#111111",

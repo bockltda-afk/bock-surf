@@ -3,54 +3,53 @@ import { formatPrice } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Clase Individual",
+    name: "COACH 1 SESSION",
     price: 30000,
     period: "sesión",
-    description: "Perfecta para probar la metodología o como sesión puntual de trabajo técnico.",
+    description: "Sesión puntual de trabajo técnico con video y retroalimentación.",
     features: [
       { name: "1 sesión en el agua", included: true },
-      { name: "Análisis de video en sesión", included: true },
-      { name: "Envío de tus tomas grabadas", included: true },
-      { name: "Coaching de maniobras", included: true },
-      { name: "Ahorro vs precio unitario", included: false },
+      { name: "Análisis de movimiento", included: true },
+      { name: "Envío de registros", included: true },
+      { name: "Video de olas tomadas", included: true },
       { name: "Plan de mejora progresivo", included: false },
     ],
     isFeatured: false,
-    cta: "Reservar Clase",
+    cta: "Reservar",
   },
   {
-    name: "Pack 5 Clases",
+    name: "PACK 5 SESSIONS",
     price: 130000,
     period: "pack",
     unitPrice: 26000,
-    description: "El mejor valor para progresar rápido con seguimiento continuo entre sesiones.",
+    description: "Máximo rendimiento con seguimiento continuo entre sesiones.",
     features: [
       { name: "5 sesiones en el agua", included: true },
-      { name: "Análisis de video en sesión", included: true },
-      { name: "Envío de tus tomas grabadas", included: true },
-      { name: "Coaching de maniobras", included: true },
-      { name: "Ahorro de $20.000 vs unitario", included: true },
-      { name: "Plan de mejora progresivo", included: true },
+      { name: "Análisis detallado", included: true },
+      { name: "Envío de registros HD", included: true },
+      { name: "Video de cada sesión", included: true },
+      { name: "Ahorro de $20.000", included: true },
+      { name: "Plan de mejora técnica", included: true },
     ],
     isFeatured: true,
-    cta: "🏄 Quiero el Pack 5",
+    cta: "Comenzar",
   },
   {
-    name: "Pack 3 Clases",
+    name: "PACK 3 SESSIONS",
     price: 81000,
     period: "pack",
     unitPrice: 27000,
-    description: "Ideal para comprometerse con la mejora técnica en un bloque concentrado.",
+    description: "Ideal para bloques concentrados de mejora técnica.",
     features: [
       { name: "3 sesiones en el agua", included: true },
-      { name: "Análisis de video en sesión", included: true },
-      { name: "Envío de tus tomas grabadas", included: true },
-      { name: "Coaching de maniobras", included: true },
-      { name: "Ahorro de $9.000 vs unitario", included: true },
-      { name: "Plan de mejora progresivo", included: false },
+      { name: "Análisis de movimiento", included: true },
+      { name: "Envío de registros", included: true },
+      { name: "Video de cada sesión", included: true },
+      { name: "Ahorro de $9.000", included: true },
+      { name: "Plan de mejora técnica", included: false },
     ],
     isFeatured: false,
-    cta: "Reservar Pack 3",
+    cta: "Reservar",
   },
 ];
 
@@ -74,15 +73,15 @@ export default function Pricing() {
           {plans.map((plan, idx) => (
             <div
               key={idx}
-              className={`flex flex-col flex-1 rounded-3xl p-8 ${
+              className={`flex flex-col flex-1 p-8 ${
                 plan.isFeatured
-                  ? "glass border-2 border-accent relative shadow-2xl shadow-accent/10 lg:-translate-y-4"
-                  : "bg-card/50 border border-white/10"
+                  ? "bg-card border-2 border-accent relative shadow-2xl shadow-accent/10 lg:-translate-y-4"
+                  : "bg-card border border-white/5 hover:border-secondary transition-colors"
               }`}
             >
               {plan.isFeatured && (
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent text-background px-4 py-1 rounded-full text-sm font-black uppercase tracking-wider whitespace-nowrap">
-                  ⭐ Mejor Valor
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent text-white px-4 py-1 text-[10px] font-bold uppercase tracking-[0.2em] whitespace-nowrap">
+                  Recomendado
                 </div>
               )}
 
@@ -117,10 +116,10 @@ export default function Pricing() {
 
               <a
                 href="#contacto"
-                className={`w-full text-center py-4 rounded-xl font-bold transition-all text-sm ${
+                className={`w-full text-center py-4 font-bold uppercase tracking-widest transition-all text-xs ${
                   plan.isFeatured
-                    ? "bg-accent hover:bg-accent-hover text-background shadow-lg shadow-accent/20"
-                    : "bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-accent/30"
+                    ? "bg-accent hover:bg-accent-hover text-white shadow-lg shadow-accent/20"
+                    : "bg-transparent border-2 border-white hover:bg-white hover:text-black text-white"
                 }`}
               >
                 {plan.cta}
@@ -129,8 +128,8 @@ export default function Pricing() {
           ))}
         </div>
 
-        <p className="text-center text-gray-600 text-sm mt-10">
-          * Los packs no tienen fecha de vencimiento. Úsalos a tu ritmo. Coordina cada sesión directo por WhatsApp.
+        <p className="text-center text-gray-500 text-[10px] uppercase tracking-widest font-bold mt-10">
+          * Los packs no tienen fecha de vencimiento. Coordina cada sesión directo por WhatsApp.
         </p>
       </div>
     </section>
