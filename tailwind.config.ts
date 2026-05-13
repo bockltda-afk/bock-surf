@@ -10,12 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         accent: {
-          DEFAULT: "#00C9FF", // Cian oceánico vibrante
-          hover: "#00A8D8",
+          DEFAULT: "#38bdf8", // Sky Blue elegante
+          hover: "#0ea5e9",
         },
-        background: "#050d18",   // Azul marino muy oscuro
-        foreground: "#f0f4f8",
-        card: "#0c1b2e",
+        background: "#020617",   // Slate 950 (Azul profundo profesional)
+        foreground: "#f8fafc",   // Slate 50
+        card: "#0f172a",         // Slate 900
+        muted: "#64748b",        // Slate 500 para textos secundarios
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
