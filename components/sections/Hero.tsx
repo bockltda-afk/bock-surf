@@ -5,13 +5,15 @@ export default function Hero() {
     <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Video / Background */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://dukesurf.com/wp-content/uploads/2021/08/Andino_K_21MEX_Diz_TOD_5039-uai-1309x982.jpg"
-          alt="Tomás Bock en acción"
-          fill
-          className="object-cover object-center brightness-50"
-          priority
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover object-center brightness-50"
+        >
+          <source src="/hero-background.m4v" type="video/mp4" />
+        </video>
         {/* Overlay degradado oceánico */}
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
