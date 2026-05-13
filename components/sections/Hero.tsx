@@ -42,7 +42,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-white mb-4 font-bold uppercase tracking-tighter leading-relaxed max-w-2xl">
-            Coach Profesional para conseguir el performance esperado
+            COACH PROFESIONAL
           </p>
           <p className="text-sm font-mono text-muted uppercase mb-10 max-w-xl">
             Coach Asincrónicos y Presenciales
