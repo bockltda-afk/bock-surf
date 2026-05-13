@@ -35,9 +35,9 @@ export default function Hero() {
             className="text-7xl md:text-9xl font-bold tracking-tighter text-white mb-6 leading-[0.85] uppercase"
             style={{ fontFamily: "'Oswald', sans-serif" }}
           >
-            TOMÁS<br />
+            BOCK SURF<br />
             <span className="text-accent">
-              BOCK
+              ACADEMY
             </span>
           </h1>
 

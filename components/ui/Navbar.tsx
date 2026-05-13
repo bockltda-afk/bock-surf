@@ -47,12 +47,12 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-3">
-          <div className="bg-white text-black px-2 py-0.5 font-bold text-xl tracking-tighter">TB</div>
+          <div className="bg-white text-black px-2 py-0.5 font-bold text-xl tracking-tighter">BSA</div>
           <span 
             className="text-2xl font-bold tracking-tighter text-white uppercase"
             style={{ fontFamily: "'Oswald', sans-serif" }}
           >
-            Tomás<span className="text-accent">Bock</span>
+            Bock Surf <span className="text-accent">Academy</span>
           </span>
         </a>
 
