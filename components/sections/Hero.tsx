@@ -10,13 +10,13 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover object-center brightness-50"
+          className="absolute inset-0 w-full h-full object-cover object-center brightness-75"
         >
-          <source src="/hero-background.m4v" type="video/mp4" />
+          <source src="/hero-background.mp4" type="video/mp4" />
         </video>
-        {/* Overlay degradado oceánico */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        {/* Overlay degradado oceánico suave para que destaque el video */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
       </div>
 
       {/* Partículas decorativas */}
