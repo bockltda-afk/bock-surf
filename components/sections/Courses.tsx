@@ -3,17 +3,14 @@
 export default function Courses() {
   const comingSoon = [
     {
-      emoji: "🏄",
       title: "Surf desde Cero",
       desc: "Todo lo que necesitas saber para tus primeras olas. Fundamentos, seguridad y técnica inicial.",
     },
     {
-      emoji: "🎯",
       title: "Técnica Avanzada de Maniobras",
       desc: "Bottom turn, cutback, floater y más. Análisis de video incluido en cada módulo.",
     },
     {
-      emoji: "🌊",
       title: "Lectura del Océano",
       desc: "Aprende a leer corrientes, bancos, viento y mareas. El conocimiento que cambia todo.",
     },

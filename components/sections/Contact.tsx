@@ -51,13 +51,13 @@ export default function Contact() {
               <a
                 href="https://wa.me/56963097435"
                 target="_blank"
-                className="flex items-center gap-4 glass p-4 rounded-xl hover:border-accent/40 transition-all group"
+                className="flex items-center gap-4 bg-card border border-white/5 hover:border-secondary p-4 transition-all group"
               >
                 <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center group-hover:bg-green-500/20 transition-colors">
                   <MessageCircle className="text-green-400" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-0.5">WhatsApp</p>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-0.5 font-bold">WhatsApp</p>
                   <p className="text-white font-bold">+56 9 6309 7435</p>
                 </div>
               </a>
@@ -65,26 +65,26 @@ export default function Contact() {
               <a
                 href="https://instagram.com/tomas_bock"
                 target="_blank"
-                className="flex items-center gap-4 glass p-4 rounded-xl hover:border-accent/40 transition-all group"
+                className="flex items-center gap-4 bg-card border border-white/5 hover:border-secondary p-4 transition-all group"
               >
                 <div className="w-12 h-12 bg-pink-500/10 rounded-lg flex items-center justify-center group-hover:bg-pink-500/20 transition-colors">
                   <Instagram className="text-pink-400" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-0.5">Instagram</p>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-0.5 font-bold">Instagram</p>
                   <p className="text-white font-bold">@tomas_bock</p>
                 </div>
               </a>
 
               <a
                 href="mailto:Bock.Ltda@gmail.com"
-                className="flex items-center gap-4 glass p-4 rounded-xl hover:border-accent/40 transition-all group"
+                className="flex items-center gap-4 bg-card border border-white/5 hover:border-secondary p-4 transition-all group"
               >
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <Mail className="text-accent" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-0.5">Email</p>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-0.5 font-bold">Email</p>
                   <p className="text-white font-bold">Bock.Ltda@gmail.com</p>
                 </div>
               </a>
@@ -147,11 +147,11 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-accent hover:bg-accent-hover text-background font-black py-4 rounded-xl flex items-center justify-center gap-2 transition-all text-lg shadow-lg shadow-accent/20 disabled:opacity-70"
+                className="w-full bg-accent hover:bg-accent-hover text-white font-bold py-4 uppercase tracking-widest flex items-center justify-center gap-2 transition-all text-lg shadow-lg shadow-accent/20 disabled:opacity-70"
               >
                 {isSubmitting ? "Enviando..." : (
                   <>
-                    ¡Quiero empezar a surfear!
+                    Enviar Mensaje
                     <Send size={20} />
                   </>
                 )}
@@ -159,7 +159,7 @@ export default function Contact() {
 
               {success && (
                 <div className="mt-4 p-4 bg-green-900/30 border border-green-500/40 rounded-xl text-green-400 text-center font-medium">
-                  🏄 ¡Mensaje recibido! Te respondo pronto.
+                  Mensaje recibido. Te respondo pronto.
                 </div>
               )}
             </form>
