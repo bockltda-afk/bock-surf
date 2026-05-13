@@ -45,7 +45,7 @@ export default function Hero() {
             Coach Profesional para conseguir el performance esperado
           </p>
           <p className="text-sm font-mono text-muted uppercase mb-10 max-w-xl">
-            Reñaca · Viña del Mar · La Boca · Concón | Chile
+            Coach Asincrónicos y Presenciales
           </p>
 
           {/* CTAs */}
