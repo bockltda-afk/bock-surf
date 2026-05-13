@@ -5,32 +5,32 @@ import ProductCard from "@/components/ui/ProductCard";
 const mockServices = [
   {
     id: "1",
-    name: "Clase Individual",
-    short_description: "Una sesión completa en el agua con análisis de video, envío de tomas y coaching personalizado de maniobras.",
+    name: "COACH 1 SESSION",
+    short_description: "Incluye video de olas, análisis de movimiento, retroalimentación y envío de registros.",
     price: 30000,
     duration_weeks: null,
     type: "presencial" as const,
-    image_url: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=2070&auto=format&fit=crop",
+    image_url: "https://dukesurf.com/wp-content/uploads/2021/08/Andino_K_21MEX_Diz_TOD_5039-uai-1309x982.jpg",
   },
   {
     id: "2",
-    name: "Pack 3 Clases",
-    short_description: "3 sesiones en el agua. Incluye análisis de video de cada sesión, envío de tomas y coaching de maniobras y mejora continua.",
+    name: "PACK 3 SESSIONS",
+    short_description: "Seguimiento técnico extendido con análisis de video y retroalimentación en cada sesión.",
     price: 81000,
     original_price: 90000,
     duration_weeks: null,
     type: "presencial" as const,
-    image_url: "https://images.unsplash.com/photo-1531722569936-825d3dd91b15?q=80&w=2070&auto=format&fit=crop",
+    image_url: "https://dukesurf.com/wp-content/uploads/2021/08/Andino_K_21MEX_Diz_TOD_5039-uai-1309x982.jpg",
   },
   {
     id: "3",
-    name: "Pack 5 Clases",
-    short_description: "5 sesiones intensivas. Análisis de video profesional, envío de tomas, coaching de maniobras y plan de mejora personalizado.",
+    name: "PACK 5 SESSIONS",
+    short_description: "Máximo rendimiento. Análisis detallado, envío de videos y plan de maniobras profesional.",
     price: 130000,
     original_price: 150000,
     duration_weeks: null,
     type: "presencial" as const,
-    image_url: "https://images.unsplash.com/photo-1455264745730-cb3b76250ae8?q=80&w=2070&auto=format&fit=crop",
+    image_url: "https://dukesurf.com/wp-content/uploads/2021/08/Andino_K_21MEX_Diz_TOD_5039-uai-1309x982.jpg",
   },
 ];
 
@@ -45,16 +45,16 @@ export default function Services() {
           <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight text-white mb-4">
             Coaching de <span className="text-accent">Surf</span>
           </h2>
-          <p className="text-lg text-gray-400">
-            Cada clase incluye <span className="text-white font-semibold">análisis de video, envío de tomas y coaching de maniobras</span>. 
-            Ves tus errores, los corriges y surfeas mejor en cada sesión.
+          <p className="text-lg text-gray-400 font-light">
+            Sesiones de alto rendimiento que incluyen <span className="text-white font-bold">video de olas, análisis de movimiento y retroalimentación técnica</span>. 
+            Todos los registros se envían al cliente para su mejora continua.
           </p>
         </div>
 
         {/* Included badge */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {["🎥 Análisis de Video", "📱 Envío de Tomas", "🏄 Coach de Maniobras", "📈 Plan de Mejora"].map((feature) => (
-            <span key={feature} className="glass px-4 py-2 rounded-full text-sm text-gray-300 border border-white/10">
+          {["Video de Olas Tomadas", "Análisis de Movimiento", "Retroalimentación", "Envío de Videos", "Análisis Detallado Extra"].map((feature) => (
+            <span key={feature} className="bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-widest text-gray-300 border border-white/10">
               {feature}
             </span>
           ))}
