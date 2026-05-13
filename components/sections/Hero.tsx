@@ -42,7 +42,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-white mb-4 font-bold uppercase tracking-tighter leading-relaxed max-w-2xl">
-            Técnica · Potencia · Lectura de Océano
+            Coach Profesional para conseguir el performance esperado
           </p>
           <p className="text-sm font-mono text-muted uppercase mb-10 max-w-xl">
             Reñaca · Viña del Mar · La Boca · Concón | Chile
