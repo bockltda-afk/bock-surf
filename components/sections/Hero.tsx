@@ -51,7 +51,7 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#servicios"
+              href="#precios"
               className="px-8 py-4 bg-accent hover:bg-accent-hover text-white rounded-none font-bold text-lg uppercase tracking-widest transition-all shadow-xl shadow-accent/20 text-center"
             >
               Ver Coaching
