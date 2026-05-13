@@ -3,7 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 
 export async function GET() {
   try {
-    const supabase = createClient();
+    const supabase = await createClient();
     
     // Obtenemos solo productos activos, ordenados por posición
     const { data: products, error } = await supabase
