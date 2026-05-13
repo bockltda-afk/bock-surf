@@ -3,12 +3,12 @@ export default function Hero() {
     <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Video / Background */}
       <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center scale-105"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=2070&auto=format&fit=crop')",
-          }}
+        <Image
+          src="https://dukesurf.com/wp-content/uploads/2021/08/Andino_K_21MEX_Diz_TOD_5039-uai-1309x982.jpg"
+          alt="Tomás Bock en acción"
+          fill
+          className="object-cover object-center brightness-50"
+          priority
         />
         {/* Overlay degradado oceánico */}
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/30" />

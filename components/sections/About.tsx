@@ -35,12 +35,11 @@ export default function About() {
             </div>
 
             <div className="aspect-[3/4] rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl">
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                  backgroundImage:
-                    "url('https://images.unsplash.com/photo-1455264745730-cb3b76250ae8?q=80&w=2070&auto=format&fit=crop')",
-                }}
+              <Image
+                src="https://dukesurf.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-07-at-9.57.03-PM-scaled.jpeg"
+                alt="Tomás Bock Portrait"
+                fill
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
             </div>
