@@ -114,12 +114,13 @@ CREATE POLICY "Anyone can subscribe to newsletter"
 -- DATOS INICIALES DE EJEMPLO
 -- ============================================
 INSERT INTO site_content (section, key, value) VALUES
-  ('hero', 'title', 'Transforma Tu Cuerpo, Cambia Tu Vida'),
-  ('hero', 'subtitle', 'Coaching físico personalizado presencial y online. Resultados reales con método probado.'),
-  ('hero', 'video_url', 'https://www.youtube.com/embed/TU_VIDEO_ID'),
-  ('hero', 'cta_primary', 'Ver Servicios'),
-  ('hero', 'cta_secondary', 'Conoce los Cursos'),
-  ('about', 'title', 'Hola, soy [TU NOMBRE]'),
-  ('about', 'bio', 'Coach certificado con más de 10 años de experiencia transformando cuerpos y mentes...'),
-  ('contact', 'title', '¿Listo para empezar?'),
+  ('hero', 'title', 'Tomás Bock | Surf Coach'),
+  ('hero', 'subtitle', 'Aprende a leer el océano y dominar las olas con un surfista profesional.'),
+  ('hero', 'location', 'Reñaca · Concón · Viña del Mar'),
+  ('hero', 'cta_primary', 'Ver Coaching'),
+  ('hero', 'cta_secondary', 'Cursos Online'),
+  ('about', 'title', 'Hola, soy Tomás Bock'),
+  ('about', 'bio', 'Surfista profesional chileno con más de 10 años en el agua. Mi misión es enseñarte a surfear con técnica y seguridad.'),
+  ('contact', 'title', '¿Listo para surfear?'),
   ('contact', 'subtitle', 'Escríbeme y te respondo en menos de 24 horas');
+
