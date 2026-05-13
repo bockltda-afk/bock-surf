@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">

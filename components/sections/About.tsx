@@ -1,5 +1,7 @@
 import { CheckCircle, Award, Waves, Globe } from "lucide-react";
 
+import Image from "next/image";
+
 export default function About() {
   const credentials = [
     "Surfista profesional con trayectoria en competencias nacionales e internacionales",
