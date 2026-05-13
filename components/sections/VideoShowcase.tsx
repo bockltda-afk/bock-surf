@@ -11,7 +11,7 @@ export default function VideoShowcase() {
         <div className="relative w-full aspect-video border border-white/10 shadow-2xl p-2 bg-card">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/4Nbc15J1v2I?autoplay=0&rel=0&showinfo=0"
+            src="https://www.youtube.com/embed/RbcWihRe19o?autoplay=0&rel=0&showinfo=0"
             title="Tomás Bock Surf Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
