@@ -38,26 +38,26 @@ export default function Courses() {
           {comingSoon.map((course, idx) => (
             <div
               key={idx}
-              className="glass rounded-2xl p-8 border border-white/10 flex flex-col items-center text-center relative overflow-hidden group"
+              className="bg-card p-8 border border-white/5 hover:border-secondary transition-colors flex flex-col items-center text-center relative overflow-hidden group"
             >
               {/* Blur overlay */}
-              <div className="absolute inset-0 backdrop-blur-[2px] bg-background/40 z-10 flex flex-col items-center justify-center rounded-2xl">
-                <span className="bg-accent/10 border border-accent/30 text-accent text-xs font-black uppercase tracking-widest px-4 py-2 rounded-full">
-                  🚧 Próximamente
+              <div className="absolute inset-0 bg-background/60 z-10 flex flex-col items-center justify-center">
+                <span className="bg-white/5 border border-white/20 text-white text-[10px] font-bold uppercase tracking-[0.3em] px-6 py-2">
+                  Próximamente
                 </span>
               </div>
 
-              <span className="text-5xl mb-4 opacity-40">{course.emoji}</span>
+              <div className="w-16 h-[1px] bg-secondary mb-6 opacity-40" />
               <h3 className="text-xl font-bold text-white mb-2 opacity-40">{course.title}</h3>
-              <p className="text-gray-500 text-sm opacity-40">{course.desc}</p>
+              <p className="text-gray-500 text-sm opacity-40 font-light">{course.desc}</p>
             </div>
           ))}
         </div>
 
         {/* Newsletter CTA */}
-        <div className="glass rounded-3xl p-10 md:p-14 text-center border border-accent/20 max-w-2xl mx-auto shadow-2xl shadow-accent/5">
-          <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl">
-            🔔
+        <div className="bg-card p-10 md:p-14 text-center border-t-4 border-secondary max-w-2xl mx-auto shadow-2xl">
+          <div className="w-16 h-16 bg-white/5 border-2 border-secondary flex items-center justify-center mx-auto mb-6">
+            <div className="w-8 h-8 bg-accent" />
           </div>
           <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
             ¿Quieres ser el primero en saber?
@@ -85,9 +85,9 @@ export default function Courses() {
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-accent hover:bg-accent-hover text-background rounded-lg font-black transition-all text-sm whitespace-nowrap shadow-lg shadow-accent/20"
+              className="px-8 py-3 bg-accent hover:bg-accent-hover text-white font-bold transition-all text-xs uppercase tracking-widest shadow-lg shadow-accent/20"
             >
-              Avisarme 🤙
+              Avisarme
             </button>
           </form>
         </div>
